@@ -1,0 +1,15 @@
+decl
+  integer a,b;
+enddecl
+
+integer main()
+{
+  begin
+  c = 5;
+  a = 5
+  
+  if a < b then
+    a = 10;
+  endif
+  end
+}

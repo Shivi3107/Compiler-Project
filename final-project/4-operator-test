@@ -1,0 +1,31 @@
+decl
+    integer a[10];
+    integer x, y;
+enddecl
+
+integer main() {
+begin
+    x = 5;
+    y = 7;
+    
+    if(x > y) then
+      write x;
+    else 
+      write y;
+    endif;
+
+    a[0] = (x + y);
+    a[1] = (x - y);
+    a[2] = (x * y);
+    a[3] = (x / y);
+    a[4] = (x % y);
+
+    if a[3] <= (a[4] + a[0]) then
+      write (a[4] + 10);
+    endif;
+
+    if a[1] != 0 then
+      write (a[0] / a[1]);
+    endif;
+end
+}

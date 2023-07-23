@@ -1,0 +1,21 @@
+decl
+	integer a, b, c, i;
+enddecl
+
+integer main(){
+begin   
+  a = 0;
+  b = 1;
+  i = 2;
+
+  write (a);
+  write(b);
+
+  while i < 100 do
+    c = a + b;
+    a = b;
+    b = c;
+    write (c);
+  endwhile;
+end
+}

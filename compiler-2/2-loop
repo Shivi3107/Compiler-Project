@@ -1,0 +1,19 @@
+decl
+  integer a[100], index;
+  integer b[100];
+enddecl
+
+integer main() {
+begin
+  index = 0;
+  
+  while index < 100 do
+    a[index] = index + 10;
+    b[index] = index * 2;
+
+    index = index + 1;
+    
+    write (a[index] + b[index]) ;
+  endwhile;
+end
+}
